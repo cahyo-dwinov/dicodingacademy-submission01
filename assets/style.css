@@ -1,119 +1,135 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,700i,800,900&display=swap');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-
-/*=============Navbar Start============ */
-
-nav {
-    background-color: #373F51;
-    padding: 0px;
-    margin: 0;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-    overflow: hidden;
-}
-
-nav li {
-    display: inline;
-    padding: 20px;
-}
-
-nav a {
-    color: #EF8354;
-    font-size: 18px;
-    font-weight: normal;
-    text-decoration: none;
-    font-weight: 580;
-}
-
-nav a:hover {
-    color: white;
-}
-
-nav a:active {
-    color: white;
-}
-
-
-/*=============Main Start============ */
-
-main {
-    padding: 20px;
-    overflow: auto;
-}
-
-
-/*=============Main End============ */
-
-
-/*=============Jumbotron Start============ */
-
-.jumbotron {
-    margin: 0;
-    padding: 0;
-    height: 300px;
-    /* background-color: rebeccapurple; */
-}
-
-.jumbotron-cover img {
-    width: 100%;
-    position: absolute;
-    z-index: -99;
-}
-
-.jumbotron h1,
-p {
-    margin: auto;
-    color: white;
-}
-
-.jumbotron h1 {
-    margin: auto;
-    font-size: 80px;
-    font-weight: 800;
-    letter-spacing: 8px;
-}
-
-.jumbotron p {
-    font-size: 24;
-}
-
-
-/* .jumbotron {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    height: 200px;
-}
-
-.jumbotron-cover {
-    width: 100%;
-    align-items: center;
-    position: absolute;
-}
-
-.jumbotron h1 {
-    align-items: center;
-    padding: 10px;
-    font-size: 80px;
-} */
-
-
-/*=============Jumbotron End============ */
-
-.content {}
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,700i,800,900&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+    /*=============Navbar Start============ */
+    
+    nav {
+        background-color: #373F51;
+        padding: 0px;
+        margin: 0;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+    
+    .navbar-menus img {
+        display: none;
+    }
+    
+    nav ul {
+        list-style: none;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+        overflow: hidden;
+    }
+    
+    nav li {
+        display: inline;
+        padding: 20px;
+    }
+    
+    nav a {
+        color: #EF8354;
+        font-size: 18px;
+        font-weight: normal;
+        text-decoration: none;
+        font-weight: 580;
+    }
+    
+    nav a:hover {
+        color: white;
+    }
+    
+    nav a:active {
+        color: white;
+    }
+    /*=============Main Start============ */
+    
+    main {
+        padding: 20px;
+        overflow: auto;
+    }
+    /*=============Main End============ */
+    /*=============Jumbotron Start============ */
+    
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        /* background-color: rebeccapurple; */
+    }
+    
+    .jumbotron-cover img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        position: absolute;
+        z-index: -99;
+    }
+    
+    .jumbotron h1,
+    p {
+        margin: auto;
+        color: white;
+    }
+    
+    .jumbotron h1 {
+        margin: auto;
+        position: relative;
+        top: 15%;
+        text-align: center;
+        font-size: 90px;
+        font-weight: 800;
+        letter-spacing: 8px;
+    }
+    
+    .jumbotron p {
+        font-size: 18px;
+        font-weight: lighter;
+        position: relative;
+        font-style: italic;
+        text-align: center;
+        padding-top: 55px;
+        color: white;
+    }
+    
+    p .dicoding-access {
+        color: white;
+        text-decoration: none;
+    }
+    
+    p .dicoding-access:hover {
+        color: #bbbbbb;
+    }
+    /*=============Jumbotron End============ */
+    
+    @media screen and (max-width: 1150px) {
+        .jumbotron h1 {
+            font-size: 75px;
+        }
+    }
+    
+    @media screen and (max-width: 855px) {
+        .jumbotron p {
+            display: none;
+        }
+        nav li {
+            padding: 8px;
+        }
+    }
+    
+    @media screen and (max-width: 560px) {
+        nav li {
+            padding: 4px;
+        }
+        nav li a {
+            font-size: 14px;
+        }
+    }
