@@ -272,5 +272,21 @@ aside article p {
     padding-top: 4px;
 }
 
+.container.project {
+    width: 75%;
+    margin-left: 40px;
+    height: 80px;
+    justify-content: center;
+}
+
+.project .box {
+    margin: 25px;
+}
+
+.project img {
+    width: 65px;
+    margin: 0px;
+}
+
 
 /*=============Aside End============ */
