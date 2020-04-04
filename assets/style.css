@@ -15,9 +15,11 @@ nav {
     background-color: #373F51;
     padding: 0px;
     margin: 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
+    width: 100%;
+    height: 45px;
 }
 
 .navbar-menus img {
@@ -57,7 +59,7 @@ nav a:active {
 /*=============Jumbotron Start============ */
 
 .jumbotron {
-    margin: 0;
+    margin-top: 45px;
     padding: 0;
     height: 250px;
 }
@@ -108,30 +110,6 @@ p .dicoding-access:hover {
 
 /*=============Jumbotron End============ */
 
-@media screen and (max-width: 1150px) {
-    .jumbotron h1 {
-        font-size: 75px;
-    }
-}
-
-@media screen and (max-width: 855px) {
-    .jumbotron p {
-        display: none;
-    }
-    nav li {
-        padding: 8px;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    nav li {
-        padding: 4px;
-    }
-    nav li a {
-        font-size: 14px;
-    }
-}
-
 
 /*=============Main Start============ */
 
@@ -164,7 +142,13 @@ aside {
 article h2 {
     font-size: 35px;
     padding: 5px 0 0 15px;
-    margin: 0 0 0 0;
+    margin: 0;
+}
+
+article h2:hover {
+    color: rgb(7, 98, 216);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 article p {
@@ -193,8 +177,8 @@ article a {
 }
 
 article a:hover {
-    color: rgb(31, 31, 31);
-    font-weight: bold;
+    color: rgb(7, 98, 216);
+    text-decoration: underline;
 }
 
 article ul {
@@ -217,8 +201,9 @@ article li {
 }
 
 .next-button p:hover {
-    color: rgb(156, 156, 156);
+    color: rgb(7, 98, 216);
     cursor: pointer;
+    text-decoration: underline;
 }
 
 
@@ -229,7 +214,7 @@ article li {
 
 article img {
     width: 65%;
-    margin: 10px 25px 10px 55px;
+    margin: 10px 25px 10px 60px;
 }
 
 article h3 {
@@ -244,6 +229,16 @@ aside article p {
     text-align: center;
     text-indent: 0;
     font-size: 16px;
+}
+
+article a.link-aside {
+    color: black;
+    font-style: italic;
+}
+
+article a.link-aside:hover {
+    color: black;
+    font-style: italic;
 }
 
 .container {
@@ -267,9 +262,16 @@ aside article p {
 }
 
 .box img {
+    margin-left: 23px;
+    justify-items: center;
+    align-items: center;
     width: 35px;
-    margin-left: 15px;
     padding-top: 4px;
+}
+
+.box img:hover {
+    width: 38px;
+    cursor: pointer;
 }
 
 .container.project {
@@ -285,6 +287,11 @@ aside article p {
 
 .project img {
     width: 65px;
+    margin: 0px;
+}
+
+.project img:hover {
+    width: 60px;
     margin: 0px;
 }
 
@@ -314,3 +321,147 @@ footer p {
 
 
 /*=============Footer Start============ */
+
+
+/*=============Responsive Layout============ */
+
+@media screen and (max-width: 1400px) {
+    .jumbotron h1 {
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .jumbotron p {
+        display: none;
+    }
+    nav li {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    nav li {
+        padding: 4px;
+    }
+    nav li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box img {
+        width: 60%;
+        margin-left: 10px;
+    }
+    .box img:hover {
+        width: 70%;
+        margin-left: 7px;
+    }
+    .box {
+        padding-left: 0;
+    }
+    .project img {
+        width: 50px;
+        margin: auto;
+    }
+    .project img:hover {
+        width: 45px;
+        margin: auto;
+    }
+    aside img {
+        margin: 0 0 5px 20px;
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #content,
+    aside {
+        margin: 10px 25px 15px 25px;
+        width: 100%;
+        float: none;
+    }
+    aside .card {
+        width: 50%;
+        margin: 25px auto;
+    }
+    aside .container {
+        height: 80px;
+        margin-left: 35px;
+    }
+    aside img {
+        width: 65%;
+        margin: 0 0 15px 65px;
+    }
+    .box img {
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .box img:hover {
+        width: 55%;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .container.project {
+        width: 65%;
+        margin: 15px auto;
+    }
+    .project img {
+        width: 60px;
+        margin: 0 15px;
+        padding: 0;
+    }
+    .project img:hover {
+        width: 55px;
+        margin: 0 15px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #content,
+    aside {
+        margin: 10px 25px 15px 25px;
+        width: 100%;
+        float: none;
+    }
+    aside .card {
+        width: 70%;
+        margin: 25px auto;
+    }
+    aside .container {
+        height: 80px;
+        margin-left: 35px;
+    }
+    aside img {
+        width: 65%;
+        margin: 0 0 15px 65px;
+    }
+    .box img {
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .box img:hover {
+        width: 55%;
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .container.project {
+        width: 65%;
+        margin: 15px auto;
+    }
+    .project img {
+        width: 60px;
+        margin: 0 15px;
+        padding: 0;
+    }
+    .project img:hover {
+        width: 55px;
+        margin: 0 15px;
+        padding: 0;
+    }
+}
