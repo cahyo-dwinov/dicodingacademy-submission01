@@ -231,7 +231,13 @@ article .link-article a:hover {
     float: left;
 }
 
-.card-01 img:hover {
+.penyuluhan-img img {
+    width: 650px;
+    border-radius: 25px 25px;
+    margin: 5px 15px 10px 175px;
+}
+
+.penyuluhan-img img:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
