@@ -206,6 +206,35 @@ article li {
     text-decoration: underline;
 }
 
+article h4 {
+    padding-left: 18px;
+    font-size: 19px;
+    margin-bottom: 7px;
+}
+
+article .link-article {
+    margin-left: -48px;
+}
+
+article .link-article a {
+    color: black;
+}
+
+article .link-article a:hover {
+    color: rgb(7, 98, 216);
+}
+
+.card-01 img {
+    width: 450px;
+    border-radius: 25px 0px;
+    margin: 5px 15px 10px 20px;
+    float: left;
+}
+
+.card-01 img:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
 
 /*=============Main End============ */
 
