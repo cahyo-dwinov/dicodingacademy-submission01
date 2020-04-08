@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,700i,800,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: black;
+}
+
+
+/*=============Navbar Start============ */
+
+nav {
+    background-color: #373F51;
+    padding: 0px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+}
+
+nav a {
+    color: #EF8354;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    font-weight: 580;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:active {
+    color: white;
+}
+
+
+/*=============Jumbotron Start============ */
+
+header .jumbotron {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.jumbotron img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    z-index: -999;
+}
+
+.jumbotron h1 {
+    font-size: 120px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.jumbotron p {
+    font-size: 22px;
+    color: white;
+}
+
+.jumbotron a {
+    color: white;
+    font-weight: 600;
+}
+
+.jumbotron a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    color: rgb(0, 17, 75);
+}
+
+
+/*=============Jumbotron End============ */
+
+
+/*=============Main Start============ */
+
+main {
+    width: 90%;
+    height: 1500px;
+    /* background-color: grey; */
+    margin: 30px auto;
+    display: flex;
+}
+
+main .main.container {
+    width: 75%;
+    /* background-color: rgb(44, 31, 38); */
+    margin-right: 25px;
+}
+
+main .aside.container {
+    width: 25%;
+    /* background-color: rgb(83, 36, 59); */
+}
+
+main .card {
+    width: 100%;
+    background-color: white;
+    border: 5px solid black;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+main .main.container h1 {
+    text-align: center;
+    font-size: 45px;
+    margin: 0 auto;
+}
+
+.main.container .vector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.main.container .vector img {
+    width: 65%;
+    margin: 15px auto;
+}
+
+.main.container .pelayanan {
+    width: 100%;
+    height: 250px;
+}
+
+
+/* Pelayanan */
+
+main .card.pelayanan {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 5000px;
+}
+
+.pelayanan .information-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.information-text h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.information-text p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.pelayanan .box-channel {
+    display: flex;
+    margin: 25px auto;
+    width: 80%;
+}
+
+.box-channel .box {
+    width: 25%;
+    margin: 50px 15px;
+}
+
+.pelayanan .box-channel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+/*=============Main End============ */
+
+
+/*=============Footer End============ */
+
+
+/*=============Responsive Layout============ */
+
+@media screen and (max-width: 650px) {
+    main .main.container .vector h1 {
+        text-align: center;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .icon-project img {
+        width: 200px;
+        margin: 0 20px;
+    }
+    .jumbotron h1 {
+        font-size: 100px;
+        margin-bottom: 0;
+    }
+    .jumbotron p {
+        display: none;
+    }
+    nav li {
+        display: inline;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    main .main.container h1 {
+        text-align: center;
+        font-size: 35px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        width: 90%;
+        height: auto;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+    main aside {
+        width: 100%;
+    }
+    .img-profile img {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    main .content {
+        margin: 0 30px 0 0;
+    }
+}

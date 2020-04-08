@@ -1,0 +1,95 @@
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,700i,800,900&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        color: black;
+    }
+    /*=============Navbar Start============ */
+    
+    nav {
+        background-color: #373F51;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        z-index: 9;
+    }
+    
+    nav li {
+        display: inline;
+        padding: 30px;
+        color: #EF8354;
+        font-size: 20px;
+        font-weight: normal;
+        text-decoration: none;
+        font-weight: 580;
+    }
+    
+    nav li:hover {
+        color: white;
+        cursor: pointer;
+    }
+    /* =============Navbar End============ */
+    /* =============Jumbotron Start============ */
+    
+    header .jumbotron {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        height: 45vh;
+    }
+    
+    .jumbotron img {
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+        position: absolute;
+        z-index: -9;
+    }
+    
+    .jumbotron h1,
+    p {
+        color: white;
+    }
+    
+    .jumbotron h1 {
+        font-size: 18vh;
+        margin-bottom: 10px;
+    }
+    
+    .jumbotron p {
+        font-size: 18px;
+        padding-bottom: 25px;
+    }
+    /* =============Responsive Start============ */
+    
+    @media screen and (min-width: 1525px) {
+        .jumbotron h1 {
+            font-size: 15vh;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 1900px) {
+        .jumbotron h1 {
+            font-size: 15vh;
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 880px) {
+        nav li {
+            font-size: 18px;
+            padding: 0 8px;
+        }
+    }
